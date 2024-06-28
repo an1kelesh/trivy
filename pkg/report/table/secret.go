@@ -5,11 +5,10 @@ import (
 	"fmt"
 	"strings"
 
-	"golang.org/x/term"
-
+	dbTypes "github.com/an1kelesh/trivy-db/pkg/types"
 	"github.com/aquasecurity/tml"
-	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
 	"github.com/aquasecurity/trivy/pkg/fanal/types"
+	"golang.org/x/term"
 )
 
 type secretRenderer struct {

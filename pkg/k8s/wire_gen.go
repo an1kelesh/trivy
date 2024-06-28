@@ -7,7 +7,7 @@
 package k8s
 
 import (
-	"github.com/aquasecurity/trivy-db/pkg/db"
+	"github.com/an1kelesh/trivy-db/pkg/db"
 	"github.com/aquasecurity/trivy/pkg/fanal/applier"
 	"github.com/aquasecurity/trivy/pkg/fanal/cache"
 	"github.com/aquasecurity/trivy/pkg/scanner/langpkg"

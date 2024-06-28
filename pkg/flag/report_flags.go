@@ -3,17 +3,17 @@ package flag
 import (
 	"strings"
 
-	"github.com/mattn/go-shellwords"
-	"github.com/samber/lo"
 	"golang.org/x/exp/slices"
 	"golang.org/x/xerrors"
 
-	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
+	dbTypes "github.com/an1kelesh/trivy-db/pkg/types"
 	"github.com/aquasecurity/trivy/pkg/compliance/spec"
 	"github.com/aquasecurity/trivy/pkg/log"
 	"github.com/aquasecurity/trivy/pkg/result"
 	"github.com/aquasecurity/trivy/pkg/types"
 	xstrings "github.com/aquasecurity/trivy/pkg/x/strings"
+	"github.com/mattn/go-shellwords"
+	"github.com/samber/lo"
 )
 
 // e.g. config yaml:

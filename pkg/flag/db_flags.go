@@ -6,7 +6,7 @@ import (
 	"github.com/aquasecurity/trivy/pkg/log"
 )
 
-const defaultDBRepository = "ghcr.io/aquasecurity/trivy-db"
+const defaultDBRepository = "ghcr.io/an1kelesh/trivy-db"
 const defaultJavaDBRepository = "ghcr.io/aquasecurity/trivy-java-db"
 
 var (

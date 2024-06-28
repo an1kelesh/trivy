@@ -5,12 +5,11 @@ import (
 	"fmt"
 	"strings"
 
+	dbTypes "github.com/an1kelesh/trivy-db/pkg/types"
+	"github.com/aquasecurity/tml"
+	"github.com/aquasecurity/trivy/pkg/types"
 	"github.com/fatih/color"
 	"golang.org/x/term"
-
-	"github.com/aquasecurity/tml"
-	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
-	"github.com/aquasecurity/trivy/pkg/types"
 )
 
 const (

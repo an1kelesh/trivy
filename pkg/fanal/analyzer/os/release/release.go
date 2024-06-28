@@ -48,6 +48,8 @@ func (a osReleaseAnalyzer) Analyze(_ context.Context, input analyzer.AnalysisInp
 
 		var family types.OSType
 		switch id {
+		case "redos":
+			family = types.RedOS
 		case "alpine":
 			family = types.Alpine
 		case "opensuse-tumbleweed":

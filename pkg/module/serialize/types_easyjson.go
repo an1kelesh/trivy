@@ -4,7 +4,7 @@ package serialize
 
 import (
 	json "encoding/json"
-	types2 "github.com/aquasecurity/trivy-db/pkg/types"
+	types2 "github.com/an1kelesh/trivy-db/pkg/types"
 	digest "github.com/aquasecurity/trivy/pkg/digest"
 	types1 "github.com/aquasecurity/trivy/pkg/fanal/types"
 	types "github.com/aquasecurity/trivy/pkg/types"

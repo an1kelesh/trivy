@@ -4,7 +4,7 @@ import (
 	version "github.com/knqyf263/go-rpm-version"
 	"golang.org/x/xerrors"
 
-	"github.com/aquasecurity/trivy-db/pkg/vulnsrc/mariner"
+	"github.com/an1kelesh/trivy-db/pkg/vulnsrc/mariner"
 	osver "github.com/aquasecurity/trivy/pkg/detector/ospkg/version"
 	ftypes "github.com/aquasecurity/trivy/pkg/fanal/types"
 	"github.com/aquasecurity/trivy/pkg/log"

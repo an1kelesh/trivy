@@ -10,8 +10,8 @@ import (
 	"golang.org/x/xerrors"
 	"k8s.io/utils/clock"
 
-	"github.com/aquasecurity/trivy-db/pkg/db"
-	"github.com/aquasecurity/trivy-db/pkg/metadata"
+	"github.com/an1kelesh/trivy-db/pkg/db"
+	"github.com/an1kelesh/trivy-db/pkg/metadata"
 	"github.com/aquasecurity/trivy/pkg/fanal/types"
 	"github.com/aquasecurity/trivy/pkg/log"
 	"github.com/aquasecurity/trivy/pkg/oci"
@@ -19,7 +19,7 @@ import (
 
 const (
 	dbMediaType         = "application/vnd.aquasec.trivy.db.layer.v1.tar+gzip"
-	defaultDBRepository = "ghcr.io/aquasecurity/trivy-db"
+	defaultDBRepository = "ghcr.io/an1kelesh/trivy-db"
 )
 
 // Operation defines the DB operations

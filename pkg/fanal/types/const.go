@@ -34,6 +34,7 @@ const (
 	OpenSUSETumbleweed OSType = "opensuse.tumbleweed"
 	Oracle             OSType = "oracle"
 	Photon             OSType = "photon"
+	RedOS              OSType = "redos"
 	RedHat             OSType = "redhat"
 	Rocky              OSType = "rocky"
 	SLES               OSType = "suse linux enterprise server"

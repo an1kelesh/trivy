@@ -8,13 +8,13 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/fatih/color"
 	"golang.org/x/exp/slices"
 
+	dbTypes "github.com/an1kelesh/trivy-db/pkg/types"
 	"github.com/aquasecurity/table"
 	"github.com/aquasecurity/tml"
-	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
 	"github.com/aquasecurity/trivy/pkg/types"
+	"github.com/fatih/color"
 )
 
 var (

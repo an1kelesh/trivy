@@ -8,12 +8,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/go-redis/redis/v8"
-	"github.com/google/wire"
-	"github.com/samber/lo"
 	"golang.org/x/xerrors"
 
-	"github.com/aquasecurity/trivy-db/pkg/metadata"
+	"github.com/an1kelesh/trivy-db/pkg/metadata"
 	"github.com/aquasecurity/trivy/pkg/db"
 	"github.com/aquasecurity/trivy/pkg/fanal/cache"
 	ftypes "github.com/aquasecurity/trivy/pkg/fanal/types"
@@ -22,6 +19,9 @@ import (
 	"github.com/aquasecurity/trivy/pkg/policy"
 	"github.com/aquasecurity/trivy/pkg/types"
 	"github.com/aquasecurity/trivy/pkg/utils/fsutils"
+	"github.com/go-redis/redis/v8"
+	"github.com/google/wire"
+	"github.com/samber/lo"
 )
 
 var mu sync.Mutex

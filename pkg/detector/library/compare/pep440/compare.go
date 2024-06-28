@@ -3,8 +3,8 @@ package pep440
 import (
 	"golang.org/x/xerrors"
 
+	dbTypes "github.com/an1kelesh/trivy-db/pkg/types"
 	version "github.com/aquasecurity/go-pep440-version"
-	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
 	"github.com/aquasecurity/trivy/pkg/detector/library/compare"
 )
 

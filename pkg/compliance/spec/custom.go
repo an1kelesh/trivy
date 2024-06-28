@@ -1,11 +1,10 @@
 package spec
 
 import (
-	"github.com/samber/lo"
-
-	dbTypes "github.com/aquasecurity/trivy-db/pkg/types"
+	dbTypes "github.com/an1kelesh/trivy-db/pkg/types"
 	ftypes "github.com/aquasecurity/trivy/pkg/fanal/types"
 	"github.com/aquasecurity/trivy/pkg/types"
+	"github.com/samber/lo"
 )
 
 // We might be going to rewrite these functions in Rego,

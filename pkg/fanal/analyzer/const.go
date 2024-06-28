@@ -23,6 +23,7 @@ const (
 	TypeSUSE       Type = "suse"
 	TypeUbuntu     Type = "ubuntu"
 	TypeUbuntuESM  Type = "ubuntu-esm"
+	TypeRedOS      Type = "redos"
 
 	// OS Package
 	TypeApk         Type = "apk"
@@ -155,6 +156,7 @@ var (
 		TypeRpm,
 		TypeRpmqa,
 		TypeApkRepo,
+		TypeRedOS,
 	}
 
 	// TypeLanguages has all language analyzers
