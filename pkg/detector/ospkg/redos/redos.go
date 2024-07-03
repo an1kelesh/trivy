@@ -17,8 +17,7 @@ import (
 
 var (
 	eolDates = map[string]time.Time{
-		"7": time.Date(2024, 7, 23, 23, 59, 59, 0, time.UTC),
-		"8": time.Date(2029, 7, 18, 23, 59, 59, 0, time.UTC),
+		"7.3": time.Date(2026, 7, 23, 23, 59, 59, 0, time.UTC),
 	}
 )
 
@@ -40,7 +39,6 @@ func NewScanner() *Scanner {
 func (s *Scanner) Detect(osVer string, _ *ftypes.Repository, pkgs []ftypes.Package) ([]types.DetectedVulnerability, error) {
 	log.Logger.Info("Detecting RedOS Linux vulnerabilities...")
 
-	osVer = osver.Major(osVer)
 	log.Logger.Debugf("RedOS Linux: os version: %s", osVer)
 	log.Logger.Debugf("RedOS Linux: the number of packages: %d", len(pkgs))
 
@@ -77,5 +75,5 @@ func (s *Scanner) Detect(osVer string, _ *ftypes.Repository, pkgs []ftypes.Packa
 
 // IsSupportedVersion checks if the version is supported.
 func (s *Scanner) IsSupportedVersion(osFamily ftypes.OSType, osVer string) bool {
-	return osver.Supported(s.clock, eolDates, osFamily, osver.Major(osVer))
+	return osver.Supported(s.clock, eolDates, osFamily, osVer)
 }
